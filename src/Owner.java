@@ -4,6 +4,17 @@ public class Owner {
     private int edad;
     private char genero;
 
+    public Owner(String owner, String cedula, int edad, char genero) {
+        this.owner = owner;
+        this.cedula = cedula;
+        this.edad = edad;
+        this.genero = genero;
+    }
+
+    public void print_owner(){
+        System.out.println("El owner es: " + owner+" Cedula: "+cedula+" Edad: "+edad+" Genero: "+genero);
+    }
+
     public String esMayorEdad(){
         String my = "";
         if(edad >= 18){
